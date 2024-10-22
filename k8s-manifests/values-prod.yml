@@ -1,0 +1,5 @@
+namespace: prod
+replcias: 3
+resource-limits:
+  memory: "90Mi"
+  cpu: "6m"

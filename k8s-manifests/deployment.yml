@@ -5,7 +5,7 @@ metadata:
   labels:
     app: fastapi-app
 spec:
-  replicas: 3
+  replicas: {{ .Values.configmap.replicas }}
   selector:
     matchLabels:
       app: fastapi-app
@@ -19,11 +19,11 @@ spec:
         image: kremzeeq/fastapi-hello-world:latest
         resources:
           limits:
-            memory: "80Mi"
-            cpu: "6m"
+            memory: {{ .Values.resource-limits.memory }}
+            cpu: {{ .Values.resource-limits.cpu }}
         ports:
         - containerPort: 80
         env:
         - name: ENV
-          value: "dev"
+          value: {{ .Values.namespace }}
         

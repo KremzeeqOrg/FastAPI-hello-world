@@ -1,0 +1,11 @@
+app: fastapi-app
+namespace: default
+replicas: 1
+resources:
+  limits:
+    memory: "80Mi"
+    cpu: "6m"
+image: 
+  name: kremzeeq/fastapi-hello-world
+  tag: latest
+nodeport: 30007

@@ -1,0 +1,5 @@
+namespace: dev
+replcias: 3
+resource-limits:
+  memory: "80Mi"
+  cpu: "6m"

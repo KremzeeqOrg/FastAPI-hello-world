@@ -1,0 +1,5 @@
+namespace: default
+replcias: 1
+resource-limits:
+  memory: "80Mi"
+  cpu: "6m"

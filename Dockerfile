@@ -8,8 +8,10 @@ COPY requirements.txt /usr/src/app
 
 WORKDIR /usr/src/app
 
+RUN pip install --upgrade pip
+
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 # Expose the port the FastAPI app runs on
 EXPOSE 80

@@ -1,6 +1,6 @@
 app: fastapi-app
 namespace: default
-replicas: 1
+replicas: 2
 resources:
   limits:
     memory: "80Mi"
